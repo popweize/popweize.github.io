@@ -437,8 +437,8 @@ changyan:
 # Support for gitalk comments system.                评论系统
 gitalk:
   enable: true
-  clientID: fe4b9d69439a3bbb8da8
-  clientSecret: dd894dffa2da83dbf6431ae7526d66e1d0911f13    #生成的clientSecret
+  clientID: 3a88fd27bb6cd291a442
+  clientSecret: 6f98fd9edbab58184e44e123c02b166af19795fe    #生成的clientSecret
   repo: tongshuo-demon.github.io    #仓库名称
   owner: TongShuo-Demon    #github用户名
   admin: TongShuo-Demon
