@@ -233,8 +233,7 @@ social_icons:
 
 # Sidebar Avatar
 #in directory: /images/my_photo.jpeg
-avatar: 
-  url: /images/my_photo.jpeg
+#avatar:  /images/my_photo.jpeg
   
 
 
