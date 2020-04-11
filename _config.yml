@@ -147,7 +147,7 @@ menu_icons:
 
 
 # ---------------------------------------------------------------
-# Scheme Settings
+# Scheme Settings 主题修改
 # ---------------------------------------------------------------
 
 # Schemes
@@ -231,7 +231,7 @@ social_icons:
   Weibo: weibo
 
 
-# Sidebar Avatar
+# Sidebar Avatar  修改侧边栏头像                                    
 #in directory: /images/my_photo.jpeg
 avatar:  /images/my_photo.jpeg
   
@@ -433,15 +433,15 @@ changyan:
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 #livere_uid: your uid
-
-# Support for gitalk comments system.
+ 
+# Support for gitalk comments system.                评论系统
 gitalk:
-  enable: false
-  clientID: # 54730ddf7b9420460c03
-  clientSecret: # c05684701b25ff1c19ea0c01ce4d80c125e0707d
-  repo: # colingpt.github.io
-  owner: # colingpt
-  admin: # colingpt
+  enable: true
+  clientID: fe4b9d69439a3bbb8da8
+  clientSecret: dd894dffa2da83dbf6431ae7526d66e1d0911f13    #生成的clientSecret
+  repo: tongshuo-demon.github.io    #仓库名称
+  owner: TongShuo-Demon    #github用户名
+  admin: TongShuo-Demon
 
 # Baidu Share
 # Available value:
