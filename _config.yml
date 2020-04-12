@@ -562,7 +562,7 @@ baidu_push: true
 # API Documentation:
 # https://developers.google.com/google-apps/calendar/v3/reference/events/list
 calendar:
-  enable: false
+  enable: true
   calendar_id: ts969383078@gmail.com
   api_key: AIzaSyAFfC9LM4pVuYrOvVk0NM-gZVQ2N2tJwQU
   orderBy: startTime
