@@ -554,7 +554,7 @@ busuanzi_count:
 # tencent_mta:
 
 
-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
+# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO  让百度搜索到
 baidu_push: false
 
 # Google Calendar
