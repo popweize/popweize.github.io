@@ -5,7 +5,7 @@
 
 # Site
 title: 飞翔的猪猪
-subtitle:
+subtitle:                                                #网站子标题
 description: 涉及robmaster、C++、Python、计算机视觉
 author: 仝硕
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
@@ -72,14 +72,14 @@ plugins:
  - jekyll-feed
 
 # ---------------------------------------------------------------
-# Site Information Settings
+# Site Information Settings 站点信息设置
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Jekyll, NexT"
+keywords: "Hello, NexT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -107,12 +107,13 @@ canonical: true
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
 seo: false
 
+#如果index_with_subtitle为true，则在主页标题中增加subtitle。
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
 index_with_subtitle: false
 
 # ---------------------------------------------------------------
-# Menu Settings
+# Menu Settings 菜单设置
 # ---------------------------------------------------------------
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
@@ -120,7 +121,7 @@ menu:
   home: /
   categories: /categories/
   about: /about/
-  #archives: /archives/
+  #archives: /archives/    归档页及其图标
   tags: /tags/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
@@ -157,7 +158,7 @@ scheme: Pisces
 
 
 # ---------------------------------------------------------------
-# Font Settings
+# Font Settings  字体设置
 # - Find fonts on Google Fonts (https://www.google.com/fonts)
 # - All fonts set here will have the following styles:
 #     light, light italic, normal, normal italic, bold, bold italic
@@ -209,12 +210,12 @@ font:
 # Sidebar Settings   侧栏
 # ---------------------------------------------------------------
 
-
-# Social Links
+ 
+# Social Links          社交链接
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  LinkLabel: Link
 
 
 # Social Links Icons
