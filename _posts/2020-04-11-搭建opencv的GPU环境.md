@@ -18,30 +18,33 @@ tags:
 
 #### 安装包下载
 
-第一步首先进行安装包下载，分别包括opencv和contribute，可以在官网（https://docs.opencv.org/）上下载opencv源码和github上下载contribute源码（https://github.com/opencv/opencv_contrib），这里注意一点，openc和扩展包要保持一致。比如你使用opencv4.2.0的源码，那么扩展包必须也是4.2.0版本。将opencv解压后放置在home下，同时将扩展包也放置在opencv目录下面，并在opencv目录下建立build文件。
+第一步首先进行安装包下载，分别包括opencv和contribute，可以在[opencv4.2.0](https://docs.opencv.org/)上下载opencv源码和github上下载[contribute](https://github.com/opencv/opencv_contrib)，这里注意一点，opencv和扩展包要保持一致。比如你使用opencv4.2.0的源码，那么扩展包必须也是4.2.0版本。将opencv解压后放置在home下，同时将扩展包也放置在opencv目录下面，并在opencv目录下建立build文件。
 
 #### 配置CMAKE
 
 使用cmake-gui配置cmake更简单
 
-​       ```  sudo apt-get install cmake-gui   #安装指令    ```
-
-​       ```  cmake-gui                        #打开方法    ```
+```    
+sudo apt-get install cmake-gui   #安装指令 
+cmake-gui                        #打开方法  
+```
 
 安装opencv相关依赖包
 
-​      ``` sudo apt-get install build-essential cmake git  ```
+      ``` 
+sudo apt-get install build-essential cmake git
+sudo apt-get install libgtk-3-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev  
+sudo apt-get install python-dev python-numpy  python3-dev python3-numpy   
+sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+      ```
 
-​     ``` sudo apt-get install libgtk-3-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev  ```
+操作cmake-gui界面
 
-​     ``` sudo apt-get install python-dev python-numpy  python3-dev python3-numpy   ```
+- 主要修改CMAKE_BUILD_TYPE为RELEASE
 
-​     ```sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev```
+- 修改OPENCV_EXTRA_MODULES_PATH为
 
-cmake-gui界面
-
-- 主要修改```CMAKE_BUILD_TYPE```为```RELEASE```
-- 修改```OPENCV_EXTRA_MODULES_PATH```为```/home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules```
+  /home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules
 
 -    勾选WITH_CUDA和OPENCV_DNN_CUDA和OPENCV_GENERATE_PKGCONFIG和OPENCV_ENABLE_NONFREE.
 
@@ -51,16 +54,16 @@ cmake-gui界面
 
 ​    ```gedit /home/demon/robmasteer/opencv420/3rdparty/ippicv/ippicv.cmake```
 
--  #记得demon换成自己的用户名 将47行的   ``` "https://raw.githubusercontent.com/opencv/opencv_3rdparty/${IPPICV_COMMIT}/ippicv/" ```
+```
+- 记得demon换成自己的用户名， 将47行改为文件的本地路径："file:///home/demon/下载/"（仅供参考，根据自己的路径填写，下载的是加速文件）
 
-  改为文件的本地路径： ```     "file:///home/demon/下载/"   ```（仅供参考，根据自己的路径填写，下载的是加速文件）
+- 修改opencv420/opencv_contrib-4.2.0/modules/face/CMakeLists.txt第19行，下载face_landmark_model.dat文件
 
-- ```/home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules/face/CMakeLists.txt ```  修改其第19行，下载face_landmark_model.dat文件
+- 修改opencv420/opencv_contrib-4.2.0/modules/xfeatures2d/cmake/download_boostdesc.cmake的27行，下载boostdec_bgm等文件
 
-- /home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules/xfeatures2d/cmake/download_boostdesc.cmake  修改27行，下载boostdec_bgm等文件
+- 修改opencv420/opencv_contrib-4.2.0/modules/xfeatures2d/cmake/download_vgg.cmake21行，下载vgg_generated_120.i 等文件
+```
 
-
-- /home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules/xfeatures2d/cmake/download_vgg.cmake        修改21行，下载vgg_generated_120.i 等文件
 
 
 5. 修改CMAKE匹配的GPU计算能力
@@ -73,13 +76,10 @@ cmake-gui界面
 
 #### 开始编译
 
-1. 命令编译
-
-​      ```sudo make -j8   #8核编译 ```
-
-​      ``` sudo make install #安装```  
-
-2. 收尾工作
+      ```
+sudo make -j8   #8核编译 
+sudo make install #安装
+      ```
 
 - 配置一些OpenCV的编译环境,  将OpenCV的库添加到路径，从而可以让系统找到
 
@@ -93,15 +93,23 @@ cmake-gui界面
 
 ​      在该文件下面添加如下内容：
 
-​      ``` PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig    ```
-
-​      ```export PKG_CONFIG_PATH    ```
+      ```    
+PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig 
+export PKG_CONFIG_PATH    
+      ```
 
 * 配置生效
 
-  ```source /etc/bash.bashrc    #配置生效```
+  ```
+  source /etc/bash.bashrc    #配置生效
+  sudo updatedb #更新
+  ```
+  
+  
+  
+  
 
-​       ``` sudo updatedb #更新```
+​       
 
 ## 安装CUDA
 
