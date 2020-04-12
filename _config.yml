@@ -120,7 +120,7 @@ index_with_subtitle: false
 menu:
   home: /
   categories: /categories/
-  about: /about/
+  #about: /about/
   #archives: /archives/    归档页及其图标
   tags: /tags/
   #sitemap: /sitemap.xml
