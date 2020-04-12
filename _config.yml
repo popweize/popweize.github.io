@@ -538,8 +538,8 @@ busuanzi_count:
   site_uv_footer: 人
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_header: 总访问量 #<i class="fa fa-eye"></i>
+  site_pv_footer: 次
   # custom pv span for one page only
   page_pv: true
   page_pv_header: <i class="fa fa-file-o"></i>
@@ -563,8 +563,8 @@ baidu_push: true
 # https://developers.google.com/google-apps/calendar/v3/reference/events/list
 calendar:
   enable: false
-  calendar_id: <required>
-  api_key: <required>
+  calendar_id: ts969383078@gmail.com
+  api_key: AIzaSyAFfC9LM4pVuYrOvVk0NM-gZVQ2N2tJwQU
   orderBy: startTime
   offsetMax: 24
   offsetMin: 4
@@ -573,7 +573,7 @@ calendar:
   singleEvents: true
   maxResults: 250
 
-# Algolia Search
+# Algolia Search  云搜索
 algolia_search:
   enable: false
   hits:
