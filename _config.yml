@@ -238,19 +238,19 @@ social_icons:
 avatar:  /images/my_photo.jpeg
   
 
-
+#在侧边栏中是否显示文章标题目录。
 # Table Of Contents in the Sidebar
 toc:
   enable: true
 
-  # Automatically add list number to toc.
+  # Automatically add list number to toc.是否自动编号
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: false    # 标题目录是否自动换行
 
 
-# Creative Commons 4.0 International License.
+# Creative Commons 4.0 International License.创作声明
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 #creative_commons: by-nc-sa
@@ -258,28 +258,25 @@ toc:
 
 
 sidebar:
-  # Sidebar Position, available value: left | right
+  # 侧边栏位置: left | right (只有Pisces、Gemini有效).
   position: left
   #position: right
 
   # Sidebar Display, available value:
-  #  - post    expand on posts automatically. Default.
-  #  - always  expand for all pages automatically
-  #  - hide    expand only when click on the sidebar toggle icon.
-  #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
-  #display: hide
-  #display: remove
+  display: post         # 默认，在post文章扩展时显示。
+  #display: always      # 对所有页面都显示
+  #display: hide        # 只有点击按钮显示
+  #display: remove       # 完全删除，不显示
 
   # Sidebar offset from top menubar in pixels.
   offset: 12
   offset_float: 0
 
+  # 在侧边栏下方是否显示回到顶部(只对Pisces、Gemini有效).
   # Back to top in sidebar
-  b2t: false
+  b2t: false      
 
-  # Scroll percent label in b2t button
+  # Scroll percent label in b2t button 显示百分比
   scrollpercent: false
 
 
@@ -292,57 +289,57 @@ sidebar:
 
 
 # ---------------------------------------------------------------
-# Post Settings
+# Post Settings 文章设置
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: true # 自动折叠<!--more-->下面的正文部分
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: false  # 自动为每篇文章保存滚动位置
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
 
-# Automatically Excerpt. Not recommend.
+# 自动摘要 Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
-auto_excerpt:
+auto_excerpt: 
   enable: false
   length: 150
 
-# Post meta display settings
+# Post meta display settings # 摘要元数据
 post_meta:
-  item_text: true
-  created_at: true
-  updated_at: false
-  categories: true
+  item_text: true    # 是否显示“发表于”这几个文字
+  created_at: true   # 文章创建日期
+  updated_at: false  # 文章修改日期
+  categories: true   # 文章所属分类
 
 # Post wordcount display settings
 post_wordcount:
-  item_text: true
-  wordcount: false
-  min2read: false
-  separated_meta: true
+  item_text: true      # 是否显示文字
+  wordcount: true      # 显示字数
+  min2read: false      # 显示阅读时间
+  separated_meta: true # 是否分开
 
 # Wechat Subscriber
-#wechat_subscriber:
-  #enabled: true
+#wechat_subscriber:    # 微信公众号订阅
+  #enabled: true       # 二维码图片链接
   #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
-  #description: ex. subscribe to my blog by scanning my public wechat account
+  #description: ex. subscribe to my blog by scanning my public wechat account         # 描述性文字，会放在二维码上方
 
-# Declare license on posts
-post_copyright:
+# Declare license on posts 声明版权
+post_copyright:             # 文档许可声明
   enable: false
-  license: CC BY-NC-SA 3.0
+  license: CC BY-NC-SA 3.0  # 文档声明协议  
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
 
 
 # ---------------------------------------------------------------
-# Misc Theme Settings
+# Misc Theme Settings主题专用设置
 # ---------------------------------------------------------------
 
-# Custom Logo.
+# Custom Logo.定制Logo，只对默认Muse有效。
 # !!Only available for Default Scheme currently.
 # Options:
 #   enabled: [true/false] - Replace with specific image
@@ -352,7 +349,7 @@ custom_logo:
   image:
 
 
-# Code Highlight theme
+# Code Highlight theme代码高亮主题。
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
@@ -360,10 +357,10 @@ highlight_theme: normal
 
 
 # ---------------------------------------------------------------
-# Third Party Services Settings
+# Third Party Services Settings第三方服务设置
 # ---------------------------------------------------------------
 
-# MathJax Support
+# MathJax Support MathJax数学公式设置
 mathjax:
   enable: false
   per_page: false
@@ -375,13 +372,13 @@ han: false
 # Swiftype Search API Key
 #swiftype_key:
 
-# Baidu Analytics ID
+# Baidu Analytics ID   # 百度分析的id
 #baidu_analytics:
 
-# Duoshuo ShortName
+# Duoshuo ShortName    # 多说的shorname
 #duoshuo_shortname:
 
-# Disqus
+# Disqus              Disqus评论支持
 disqus:
   enable: false
   shortname:
@@ -390,7 +387,7 @@ disqus:
   # count need to be false when hide is true
   hide: false
 
-# <wildfire>
+# <wildfire>    评论系统
 wildfire:
   enable: false
   # version - It's recommended to use the following versions.
@@ -422,7 +419,7 @@ wildfire:
 # Gentie productKey
 #gentie_productKey:
 
-# changyan
+# changyan      # 畅言
 changyan:
   enable: false
   appid:
@@ -497,7 +494,7 @@ facebook_sdk:
   like_button:  #true
   webmaster:    #true
 
-# Facebook comments plugin
+# Facebook comments plugin        #facebook评论插件
 # This plugin depends on Facebook SDK.
 # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
 facebook_comments_plugin:
@@ -506,7 +503,7 @@ facebook_comments_plugin:
   width: 100%       # default width is 550px
   scheme: light     # default scheme is light (light or dark)
 
-# VKontakte API Support.
+# VKontakte API Support.#俄罗斯社交网站
 # To get your AppID visit https://vk.com/editapp?act=create
 vkontakte_api:
   enable: false
@@ -515,7 +512,7 @@ vkontakte_api:
   comments:     true
   num_of_posts: 10
 
-# Star rating support to each article.
+# Star rating support to each article. 对每篇文章的星级支持
 # To get your ID visit https://widgetpack.com
 rating:
   enable: false
@@ -523,18 +520,18 @@ rating:
   color:  fc6423
 
 
-# Show number of visitors to each article.
+# Show number of visitors to each article. 显示每篇文章的访问量
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: false
   app_id: #<app_id>
   app_key: #<app_key>
 
-# Show PV/UV of the website/page with busuanzi.
+# Show PV/UV of the website/page with busuanzi.不蒜子网页计数器
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -587,7 +584,7 @@ algolia_search:
     hits_stats: "${hits} results found in ${time} ms"
 
 
-# Local search                 本地搜索
+# Local search                 #本地搜索
 local_search:
   enable: true
   # if auto, trigger search by changing input
@@ -599,7 +596,7 @@ local_search:
 # External URL with BASE64 encrypt & decrypt
 # Usage: {% exturl text url "title" %}
 # Alias: {% extlink text url "title" %}
-exturl: false
+exturl: false                # 是否对外链进行加密解密
 
 
 #! ---------------------------------------------------------------
