@@ -585,9 +585,9 @@ algolia_search:
     hits_stats: "${hits} results found in ${time} ms"
 
 
-# Local search
+# Local search                 本地搜索
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
