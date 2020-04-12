@@ -442,12 +442,12 @@ gitalk:
   owner: TongShuo-Demon    #github用户名
   admin: TongShuo-Demon
 
-# Baidu Share
-# Available value:
-#    button | slide
+# Baidu Share  #分享
+ Available value:
+    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
+baidushare:
+   type: button
 
 # Share
 #jiathis:
@@ -562,7 +562,7 @@ baidu_push: true
 # API Documentation:
 # https://developers.google.com/google-apps/calendar/v3/reference/events/list
 calendar:
-  enable: true
+  enable: false
   calendar_id: ts969383078@gmail.com
   api_key: AIzaSyAFfC9LM4pVuYrOvVk0NM-gZVQ2N2tJwQU
   orderBy: startTime
