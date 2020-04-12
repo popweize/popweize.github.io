@@ -22,13 +22,13 @@ tags:
 
 #### 配置CMAKE
 
-1. 使用cmake-gui配置cmake更简单
+使用cmake-gui配置cmake更简单
 
 ​       ```  sudo apt-get install cmake-gui   #安装指令    ```
 
 ​       ```  cmake-gui                        #打开方法    ```
 
-2. 安装opencv相关依赖包
+安装opencv相关依赖包
 
 ​      ``` sudo apt-get install build-essential cmake git  ```
 
@@ -38,7 +38,7 @@ tags:
 
 ​     ```sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev```
 
-3. cmake-gui界面
+cmake-gui界面
 
 - 主要修改CMAKE_BUILD_TYPE为RELEASE
 - 修改OPENCV_EXTRA_MODULES_PATH为/home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules
@@ -47,7 +47,7 @@ tags:
 
 ![cmake-gui.png](http://ww1.sinaimg.cn/large/006lMPXUgy1gdrfy717phj30gq0hmac2.jpg)
 
-4.修改文件，避免翻墙
+修改文件，避免翻墙
 
 ​    ```gedit /home/demon/robmasteer/opencv420/3rdparty/ippicv/ippicv.cmake```
 
