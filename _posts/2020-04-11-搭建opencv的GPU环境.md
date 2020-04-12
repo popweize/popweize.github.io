@@ -44,7 +44,6 @@ sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libja
 - 主要修改CMAKE_BUILD_TYPE为RELEASE
 
 - 修改OPENCV_EXTRA_MODULES_PATH为
-
   /home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules
 
 - 勾选WITH_CUDA和OPENCV_DNN_CUDA和OPENCV_GENERATE_PKGCONFIG和OPENCV_ENABLE_NONFREE.
@@ -115,7 +114,7 @@ ubuntu-drivers devices
 
 可以看到我的电脑的显卡是GTX 850M,推荐安装的驱动是 nvidia-440
 
-#### 安装驱动法一
+#### 安装显卡驱动法一
 
 如果同意安装推荐驱动，则可以输入如下指令：
 
@@ -125,62 +124,53 @@ ubuntu-drivers devices
 
 ```sudo apt install nvidia-384```
 
-#### 安装驱动法二
+#### 安装显卡驱动法二
 
-1. 进入[NVDIA](https://www.nvidia.com/Download/index.aspx)下载驱动，根据我的个人电脑进行如下选择
+##### 下载驱动
+
+进入[NVDIA](https://www.nvidia.com/Download/index.aspx)下载驱动，根据我的个人电脑进行如下选择
 
 ![NVDIA.png](http://ww1.sinaimg.cn/large/006lMPXUgy1gdrh6asldtj30kc09sgmd.jpg)
 
-2.   删除原有的驱动
+##### 处理原有的驱动
 
-​        ```sudo apt-get remove --purge nvidia*```
+`sudo apt-get remove --purge nvidia*`
 
-3.  禁用Ubuntu默认自带安装的开源驱动：nouveau
+禁用Ubuntu默认自带安装的开源驱动：nouveau
 
-​       ```sudo gedit /etc/modprobe.d/blacklist.conf```
+`sudo gedit /etc/modprobe.d/blacklist.conf`
 
-- 在次文件中添加以下内容：
+在次文件中添加以下内容：
 
-> blacklist nouveau 
->
-> blacklist lbm-nouveau 
->
-> options nouveau modeset=0 
->
-> alias nouveau off alias 
->
-> lbm-nouveau off
+```powershell
+blacklist nouveau 
+blacklist lbm-nouveau 
+options nouveau modeset=0 
+alias nouveau off alias 
+lbm-nouveau off
+```
 
-- 关闭nouveau：
+      ```powershell
+echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf#关闭nouveau
+update-initramfs -u
+reboot  #重启电脑
+      ```
 
-​       ```echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf```
-
-- 重启
-
-​      ```update-initramfs -u```
-
-​     ``` reboot```
-
-- 验证是否成功
+##### 验证是否成功
 
 ```lsmod | grep nouveau```
 
-4. 安装驱动
+#### 安装CUDA驱动
 
-- ctrl+alt+f1进入字符界面，ctrl+alt+f7返回界面
+ctrl+alt+f1进入字符界面，ctrl+alt+f7返回界面
 
+```powershell
+sudo service lightdm stop      #这个是关闭图形界面，不执行会出错
+sudo chmod  a+x NVIDIA-Linux-x86_64-396.18.run  # 给驱动run文件赋予执行权限
+sudo ./NVIDIA-Linux-x86_64-396.18.run -no-x-check -no-nouveau-check -no-opengl-files #安装
+```
 
-```sudo service lightdm stop      //这个是关闭图形界面，不执行会出错。```
-
-- 给驱动run文件赋予执行权限：
-
-```sudo chmod  a+x NVIDIA-Linux-x86_64-396.18.run```
-
-- 安装
-
-  ```sudo ./NVIDIA-Linux-x86_64-396.18.run -no-x-check -no-nouveau-check -no-opengl-files ```
-
-只有禁用opengl这样安装才不会出现循环登陆的问题，
+只有禁用opengl这样安装才不会出现循环登陆的问题
 
 -no-x-check：安装驱动时关闭X服务
 
@@ -188,7 +178,7 @@ ubuntu-drivers devices
 
 -no-opengl-files：只安装驱动文件，不安装OpenGL文件
 
-5. 安装过程中遇到问题选项
+##### 安装过程
 
 - The distribution-provided pre-install script failed! Are you sure you want to continue? **选择 yes 继续。**
 
@@ -199,46 +189,48 @@ ubuntu-drivers devices
 - 问题大概是：Nvidia’s 32-bit compatibility libraries? **选择 No 继续。**
 
   Would you like to run the nvidia-xconfigutility to automatically update your x configuration so that the NVIDIA x driver will be used when you restart x? Any pre-existing x confile will be backed up. **选择 Yes 继续**
+  
+##### 打开图形界面
 
-6. 打开图形界面
-
-```sudo service lightdm start      //这个是打开图形界面```
+```sudo service lightdm start      #这个是打开图形界面```
 
 #### 安装CUDA
 
-1. 下载源文件
+##### 下载源文件
 
 进入官网下载[cudnn](https://developer.nvidia.com/cuda-release-candidate-download),本人下载的是cuda_10.2.89_440.33.01_linux.run和cudnn-10.2-linux-x64-v7.6.5.32.tgz.
 
 cuda和cudnn,二者一定要对应.
 
-2. 安装cuda
+##### 安装cuda
 
-```sudo chmod +x cuda_10.2.89_440.33.01_linux.run ```
-
-```sudo ./cuda_10.2.89_440.33.01_linux.run```
+```powershell
+sudo chmod +x cuda_10.2.89_440.33.01_linux.run  #改变可读可写权限
+sudo ./cuda_10.2.89_440.33.01_linux.run       
+```
 
 驱动已经安装就不要在安装了，剩下的按照默认的就行了.
 
 ![截图.png](http://ww1.sinaimg.cn/large/006lMPXUgy1gdri1r4m1kj30k30btq3s.jpg)
 
-3. 配置环境
+##### 配置环境
 
-   ```sudo gedit ~/.bashrc```
+```sudo gedit ~/.bashrc```
 
-   将安装路径添加到文件末尾：
+将安装路径添加到文件末尾：
 
-   ```export PATH=/usr/local/cuda-10.2/bin:$PATH```
+```powershell
+export PATH=/usr/local/cuda-10.2/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
+```
 
-   ```export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH```
+然后执行如下命令使路径生效：
 
-   然后执行如下命令使路径生效：
+```~/.bashrc```
 
-   ```~/.bashrc```
+##### 验证是否成功
 
-4. 验证是否成功
-
-   ```nvcc -V```
+```nvcc -V```
 
 出现下面图形说明安装成功
 
@@ -246,11 +238,11 @@ cuda和cudnn,二者一定要对应.
 
 使用自带的例子进行测试：
 
-```cd /usr/local/cuda-10.2/samples/1_Utilities/deviceQuery```
-
-``` sudo make ```
-
-```./deviceQuery```
+```powershell
+cd /usr/local/cuda-10.2/samples/1_Utilities/deviceQuery
+sudo make        #编译代码
+./deviceQuery   #执行
+```
 
 出现如下结果说明安装成功
 
@@ -258,17 +250,16 @@ cuda和cudnn,二者一定要对应.
 
 ## 安装CUdnn
 
-1. 进入下载目录
+##### 过程
 
-```tar -xzvf cudnn-10.2-linux-x64-v7.6.5.32.tgz```
+```powershell
+tar -xzvf cudnn-10.2-linux-x64-v7.6.5.32.tgz
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64 
+sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn* 
+```
 
-``` sudo cp cuda/include/cudnn.h /usr/local/cuda/include```
-
-``` sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64 ```
-
-```sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn* ```
-
-6，验证
+##### 验证
 
 ```nvidia-smi ```
 
@@ -276,9 +267,9 @@ cuda和cudnn,二者一定要对应.
 
 ## 问题补充
 
-1. 在使用yolo训练出来的模型（迭代900次 ），发现使用有问题，主要问题如下，使用cpu处理320*320图片需要600ms作用，使用opencl需要2s左右，使用cuda需要不到100ms处理一帧图片。
+1，在使用yolo训练出来的模型（迭代900次 ），发现使用有问题，主要问题如下，使用cpu处理320*320图片需要600ms作用，使用opencl需要2s左右，使用cuda需要不到100ms处理一帧图片。
 
-2. 在使用cmake-gui生成cuda文件时候，提示一个错误，大概就是opencv使用cuda,要求nvidia显卡计算能力达到5.3以上，显卡的[计算能力对应表格](https://developer.nvidia.com/cuda-gpus#compute)
+2，在使用cmake-gui生成cuda文件时候，提示一个错误，大概就是opencv使用cuda,要求nvidia显卡计算能力达到5.3以上，显卡的[计算能力对应表格](https://developer.nvidia.com/cuda-gpus#compute)
 
 
 
