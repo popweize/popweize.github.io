@@ -40,8 +40,8 @@ tags:
 
 cmake-gui界面
 
-- 主要修改CMAKE_BUILD_TYPE为RELEASE
-- 修改OPENCV_EXTRA_MODULES_PATH为/home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules
+- 主要修改```CMAKE_BUILD_TYPE```为```RELEASE```
+- 修改```OPENCV_EXTRA_MODULES_PATH```为```/home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules```
 
 -    勾选WITH_CUDA和OPENCV_DNN_CUDA和OPENCV_GENERATE_PKGCONFIG和OPENCV_ENABLE_NONFREE.
 
@@ -51,11 +51,11 @@ cmake-gui界面
 
 ​    ```gedit /home/demon/robmasteer/opencv420/3rdparty/ippicv/ippicv.cmake```
 
--  #记得demon换成自己的用户名 将47行的    "https://raw.githubusercontent.com/opencv/opencv_3rdparty/${IPPICV_COMMIT}/ippicv/" 改为文件的本地路径：      "file:///home/demon/下载/"   #（仅供参考，根据自己的路径填写，下载的是加速文件）
+-  #记得demon换成自己的用户名 将47行的   ``` "https://raw.githubusercontent.com/opencv/opencv_3rdparty/${IPPICV_COMMIT}/ippicv/" ```
 
+  改为文件的本地路径： ```     "file:///home/demon/下载/"   ```（仅供参考，根据自己的路径填写，下载的是加速文件）
 
-- /home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules/face/CMakeLists.txt   修改其第19行，下载face_landmark_model.dat文件
-
+- ```/home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules/face/CMakeLists.txt ```  修改其第19行，下载face_landmark_model.dat文件
 
 - /home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules/xfeatures2d/cmake/download_boostdesc.cmake  修改27行，下载boostdec_bgm等文件
 
