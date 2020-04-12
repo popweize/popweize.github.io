@@ -6,8 +6,8 @@
 # Site
 title: 飞翔的猪猪
 subtitle:                                                #网站子标题
-description: 涉及robmaster、C++、Python、计算机视觉
-author: 仝硕
+description: 涉及RM、C++、Python、计算机视觉
+author: Demon
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
@@ -49,7 +49,7 @@ markdown: kramdown
 kramdown:
     input: GFM
 
-# Default Attributes
+# Default Attributes 默认属性
 ## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
 defaults:
   -
@@ -67,7 +67,7 @@ feed:
 # Plugins
 ## Docs: https://help.github.com/articles/configuring-jekyll-plugins/
 plugins:
- - jemoji
+ - jemoji                          #表情包
  - jekyll-sitemap
  - jekyll-feed
 
@@ -443,11 +443,11 @@ gitalk:
   admin: TongShuo-Demon
 
 # Baidu Share   #分享
-Available value:
-   button | slide
+#Available value:
+#   button | slide
 # Warning: Baidu Share does not support https.
-baidushare:
-   type: button
+#baidushare:
+#   type: button
 
 # Share
 #jiathis:
