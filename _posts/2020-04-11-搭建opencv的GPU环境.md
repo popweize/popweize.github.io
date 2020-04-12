@@ -24,19 +24,19 @@ tags:
 
 使用cmake-gui配置cmake更简单
 
-```    
+```    powershell
 sudo apt-get install cmake-gui   #安装指令 
 cmake-gui                        #打开方法  
 ```
 
 安装opencv相关依赖包
 
-      ``` 
+``` powershell
 sudo apt-get install build-essential cmake git
 sudo apt-get install libgtk-3-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev  
 sudo apt-get install python-dev python-numpy  python3-dev python3-numpy   
 sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
-      ```
+```
 
 操作cmake-gui界面
 
@@ -46,7 +46,7 @@ sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libja
 
   /home/demon/RobMaster/opencv420/opencv_contrib-4.2.0/modules
 
--    勾选WITH_CUDA和OPENCV_DNN_CUDA和OPENCV_GENERATE_PKGCONFIG和OPENCV_ENABLE_NONFREE.
+- 勾选WITH_CUDA和OPENCV_DNN_CUDA和OPENCV_GENERATE_PKGCONFIG和OPENCV_ENABLE_NONFREE.
 
 ![cmake-gui.png](http://ww1.sinaimg.cn/large/006lMPXUgy1gdrfy717phj30gq0hmac2.jpg)
 
@@ -93,16 +93,17 @@ sudo make install #安装
 
 ​      在该文件下面添加如下内容：
 
-      ```    
+```powershell
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig 
-export PKG_CONFIG_PATH    
-      ```
+export PKG_CONFIG_PATH   
+```
+
 
 * 配置生效
 
-  ```
+  ```powershell
   source /etc/bash.bashrc    #配置生效
-  sudo updatedb #更新
+  sudo updatedb              #更新
   ```
   
   
