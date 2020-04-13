@@ -14,6 +14,12 @@ tags:
 
 想使用opencv驱动yolov3训练的模型，但是只使用CPU的时候，发现一个问题，速度太慢，使用opencl的时候反而时间更长，貌似原因是需要交互所以需要时间更长（原谅我不求甚解),于是想要gpu进行加速，但这需要使用cuda,，但是发现使用opencv4.1.0不能使用cudnn，而opencv4.2.0则可以。所以重装opencv4.2.0。
 
+系统：ubuntu16.04
+
+电脑显卡：GTX850M
+
+
+
 ## 安装opencv4.2.0以及扩展包 
 
 #### 安装包下载
@@ -150,12 +156,11 @@ alias nouveau off alias
 lbm-nouveau off
 ```
 
-      ```powershell
+```powershell
 echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf#关闭nouveau
 update-initramfs -u
 reboot  #重启电脑
-      ```
-
+```
 ##### 验证是否成功
 
 ```lsmod | grep nouveau```
