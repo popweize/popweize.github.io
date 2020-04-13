@@ -329,7 +329,7 @@ post_wordcount:
 
 # Declare license on posts 声明版权
 post_copyright:             # 文档许可声明
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0  # 文档声明协议  
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -446,8 +446,8 @@ gitalk:
 #Warning: Baidu Share does not support https.
 #Available value:
 #   button | slide
-baidushare: true
-  type: button
+#baidushare: true
+#  type: button
 
 
 # Share
