@@ -443,11 +443,11 @@ gitalk:
   admin: TongShuo-Demon
 
 # Baidu Share   #分享
-#Available value:
-#   button | slide
-# Warning: Baidu Share does not support https.
-#baidushare:
-#   type: button
+#Warning: Baidu Share does not support https.
+Available value:
+   button | slide
+   type: button
+baidushare: true
 
 # Share
 #jiathis:
