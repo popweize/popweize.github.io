@@ -429,13 +429,13 @@ changyan:
 # You can get your uid from http://www.uyan.cc
 #youyan_uid: your uid
 
-# Support for LiveRe comments system.
+# Support for LiveRe comments system.来比力
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80OTYyNy8yNjExOA==
  
 # Support for gitalk comments system.                评论系统
 gitalk:
-  enable: true
+  enable: false
   clientID: 3a88fd27bb6cd291a442
   clientSecret: 6f98fd9edbab58184e44e123c02b166af19795fe    #生成的clientSecret
   repo: tongshuo-demon.github.io    #仓库名称
