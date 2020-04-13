@@ -599,10 +599,6 @@ local_search:
 # Alias: {% extlink text url "title" %}
 exturl: false                # 是否对外链进行加密解密
 
-#打赏
-reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
-wechatpay: /images/wechat.png
-alipay: /images/alipay.jpg
 
 
 
