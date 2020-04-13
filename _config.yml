@@ -444,10 +444,11 @@ gitalk:
 
 # Baidu Share   #分享
 #Warning: Baidu Share does not support https.
-Available value:
-   button | slide
-   type: button
+#Available value:
+#   button | slide
 baidushare: true
+  type: button
+
 
 # Share
 #jiathis:
