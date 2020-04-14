@@ -458,9 +458,9 @@ gitalk:
 # Share
 #duoshuo_share: true
 
-# Google Webmaster tools verification setting
+# Google Webmaster tools verification setting 谷歌收录
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification:rWU07e3pBkfQXqIa-TJvTW-1CVHDBSAJ1u51sWfilig
 
 # Google Analytics
 #google_analytics:
