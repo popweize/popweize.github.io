@@ -373,7 +373,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID   # 百度分析的id
-#baidu_analytics:
+baidu_analytics: 985006a2242832bb377a72cd34716983
 
 # Duoshuo ShortName    # 多说的shorname
 #duoshuo_shortname:
@@ -465,7 +465,7 @@ google_site_verification:rWU07e3pBkfQXqIa-TJvTW-1CVHDBSAJ1u51sWfilig
 # Google Analytics
 #google_analytics:
 
-# Yandex Webmaster tools verification setting
+# Yandex Webmaster tools verification setting 俄罗斯搜索收录
 # See: https://webmaster.yandex.ru/
 #yandex_site_verification:
 
