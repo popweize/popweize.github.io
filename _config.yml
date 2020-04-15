@@ -438,9 +438,9 @@ gitalk:
   enable: false
   clientID: 3a88fd27bb6cd291a442
   clientSecret: 6f98fd9edbab58184e44e123c02b166af19795fe    #生成的clientSecret
-  repo: tongshuo-demon.github.io    #仓库名称
-  owner: TongShuo-Demon    #github用户名
-  admin: TongShuo-Demon
+  repo: popweize.github.io    #仓库名称
+  owner: popweize    #github用户名
+  admin: popweize
 
 # Baidu Share   #分享
 #Warning: Baidu Share does not support https.
