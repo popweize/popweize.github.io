@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: 飞翔的猪猪
+title: 欢迎来到我的小世界
 subtitle:                                                #网站子标题
 description: 涉及RM、C++、Python、计算机视觉
-author: Demon
+author: weize
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
