@@ -234,7 +234,7 @@ social_icons:
 
 
 # Sidebar Avatar  修改侧边栏头像                                    
-#in directory: /images/my_photo.jpeg
+#in directory: /images/my_photo.jpg
 avatar:  /images/my_photo.jpeg
   
 
