@@ -6,7 +6,7 @@
 # Site
 title: 欢迎来到我的小世界
 subtitle:                                                #网站子标题
-description: 涉及RM、C++、Python、计算机视觉
+description: Python、计算机视觉、机器学习、深度学习
 author: weize
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -87,7 +87,7 @@ keywords: "Hello, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+#since: 2020
 
 # icon between year and author @Footer
 authoricon: heart
@@ -153,8 +153,8 @@ menu_icons:
 
 # Schemes
 #scheme: Muse
-#scheme: Mist
-scheme: Pisces
+scheme: Mist
+#scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -235,7 +235,7 @@ social_icons:
 
 # Sidebar Avatar  修改侧边栏头像                                    
 #in directory: /images/my_photo.jpg
-avatar:  /images/my_photo.jpeg
+avatar:  /images/my_photo.jpg
   
 
 #在侧边栏中是否显示文章标题目录。
