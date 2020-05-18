@@ -110,7 +110,7 @@ seo: false
 
 #如果index_with_subtitle为true，则在主页标题中增加subtitle。
 # If true, will add site-subtitle to index page, added in jekyll config.
-subtitle: Subtitle
+subtitle: 你好，我叫陈玮泽，一位来自中国的计算机视觉算法工程师
 index_with_subtitle: true
 
 # ---------------------------------------------------------------
@@ -122,10 +122,10 @@ menu:
   home: /				#首页
   categories: /categories/		#分类
   about: /about/			#关于
-  archives: /archives/    归档页及其图标#
+  #archives: /archives/    		#归档
   #tags: /tags/				#标签
-  sitemap: /sitemap.xml
-  commonweal: /404.html
+  #sitemap: /sitemap.xml
+  #commonweal: /404.html
 
 
 # Enable/Disable menu icons.菜单栏图标
@@ -217,7 +217,7 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   GitHub: https://github.com/popweize
-  LinkLabel: Link
+  #LinkLabel: Link
 
 
 # Social Links Icons	社交链接图标
@@ -317,9 +317,9 @@ post_meta:
 
 # Post wordcount display settings
 post_wordcount:
-  item_text: true      # 是否显示文字
-  wordcount: true      # 显示字数
-  min2read: true      # 显示阅读时间
+  item_text: false      # 是否显示文字
+  wordcount: false      # 显示字数
+  min2read: false      # 显示阅读时间
   separated_meta: true # 是否分开
 
 # Wechat Subscriber
