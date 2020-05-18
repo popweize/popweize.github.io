@@ -318,9 +318,9 @@ post_meta:
 # Post wordcount display settings
 post_wordcount:
   item_text: false      # 是否显示文字
-  wordcount: true      # 显示字数
+  wordcount: false      # 显示字数
   min2read: false      # 显示阅读时间
-  separated_meta: true # 是否分开
+  separated_meta: false # 是否分开
 
 # Wechat Subscriber
 #wechat_subscriber:    # 微信公众号订阅
