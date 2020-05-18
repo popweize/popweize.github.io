@@ -282,11 +282,11 @@ sidebar:
 
 
 # Blog rolls
-links_title: 感谢硕哥技术支持   #友情链接
-links_layout: block
-links_layout: inline
-links:http://tongxiaoshuo.club/
-  Title: http://tongxiaoshuo.club/
+#links_title: 感谢硕哥技术支持   #友情链接
+#links_layout: block
+#links_layout: inline
+#links:http://tongxiaoshuo.club/
+#  Title: http://tongxiaoshuo.club/
 
 
 # ---------------------------------------------------------------
