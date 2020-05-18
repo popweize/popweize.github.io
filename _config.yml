@@ -5,7 +5,7 @@
 
 # Site
 title: 欢迎来到我的小世界				        #网站标题
-#subtitle: 你好，我叫陈玮泽，一位来自中国的算法工程师            #网站子标题
+subtitle: 么么哒～            					#网站子标题
 description: 计算机视觉、机器学习、深度学习			#网站描述
 author: 玮泽							#作者
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
@@ -242,13 +242,13 @@ avatar:  /images/my_photo.jpg
 #在侧边栏中是否显示文章标题目录。
 # Table Of Contents in the Sidebar
 toc:
-  enable: true
+  enable: false
 
   # Automatically add list number to toc.是否自动编号
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false    # 标题目录是否自动换行
+  wrap: true    # 标题目录是否自动换行
 
 
 # Creative Commons 4.0 International License.创作声明
@@ -265,8 +265,8 @@ sidebar:
 
   # Sidebar Display, available value:
   #display: post         # 默认，在post文章扩展时显示。
-  #display: always      # 对所有页面都显示
-  display: hide        # 只有点击按钮显示
+  #display: always     	 # 对所有页面都显示
+  display: hide       	 # 只有点击按钮显示
   #display: remove       # 完全删除，不显示
 
   # Sidebar offset from top menubar in pixels.
@@ -275,7 +275,7 @@ sidebar:
 
   # 在侧边栏下方是否显示回到顶部(只对Pisces、Gemini有效).
   # Back to top in sidebar
-  b2t: false      
+  b2t: true      
 
   # Scroll percent label in b2t button 显示百分比
   scrollpercent: true
@@ -299,8 +299,8 @@ scroll_to_more: true # 自动折叠<!--more-->下面的正文部分
 # Automatically saving scroll position on each post/page in cookies.
 save_scroll: true  # 自动为每篇文章保存滚动位置
 
-# Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
+# Automatically excerpt description in homepage as preamble text.自动摘录在首页的描述作为序言文本。
+excerpt_description: false
 
 # 自动摘要 Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
@@ -318,7 +318,7 @@ post_meta:
 # Post wordcount display settings
 post_wordcount:
   item_text: false      # 是否显示文字
-  wordcount: false      # 显示字数
+  wordcount: true      # 显示字数
   min2read: false      # 显示阅读时间
   separated_meta: true # 是否分开
 
@@ -388,7 +388,7 @@ disqus:
   # count need to be false when hide is true
   hide: false
 
-# <wildfire>    评论系统
+# <wildfire>    wildfire评论系统
 wildfire:
   enable: false
   # version - It's recommended to use the following versions.
@@ -420,7 +420,7 @@ wildfire:
 # Gentie productKey
 #gentie_productKey:
 
-# changyan      # 畅言
+# changyan      # 畅言评论系统
 changyan:
   enable: false
   appid:
@@ -434,7 +434,7 @@ changyan:
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 livere_uid: MTAyMC80OTYyNy8yNjExOA==
  
-# Support for gitalk comments system.                评论系统
+# Support for gitalk comments system.              gitalk评论系统
 gitalk:
   enable: false
   clientID: 3a88fd27bb6cd291a442
@@ -451,7 +451,7 @@ baidushare: true
 type: button
 
 
-# Share
+# JiaThis分享
 #jiathis:
 # Warning: JiaThis does not support https.
 #add_this_id:
