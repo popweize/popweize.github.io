@@ -6,7 +6,7 @@
 # Site
 title: 欢迎来到我的小世界				        #网站标题
 subtitle: 么么哒～            					#网站子标题
-description: 计算机视觉、机器学习、深度学习			#网站描述
+description: 你好，我叫陈玮泽，一位来自中国的计算机视觉算法工程师			#网站描述
 author: 玮泽							#作者
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans						#语言选项
@@ -110,7 +110,7 @@ seo: false
 
 #如果index_with_subtitle为true，则在主页标题中增加subtitle。
 # If true, will add site-subtitle to index page, added in jekyll config.
-subtitle: 你好，我叫陈玮泽，一位来自中国的计算机视觉算法工程师
+subtitle: 记录一下自己的菜鸡历程！！
 index_with_subtitle: true
 
 # ---------------------------------------------------------------
