@@ -318,7 +318,7 @@ post_meta:
 # Post wordcount display settings
 post_wordcount:
   item_text: false      # 是否显示文字
-  wordcount: flase      # 显示字数
+  wordcount: true      # 显示字数
   min2read: false      # 显示阅读时间
   separated_meta: true # 是否分开
 
