@@ -7,7 +7,7 @@
 title: 欢迎来到我的小世界				        #网站标题
 subtitle: 么么哒～            					#网站子标题
 description: 你好，我叫陈玮泽，一位来自中国的计算机视觉算法工程师			#网站描述
-author: 玮泽							#作者
+author: popweize							#作者
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans						#语言选项
 date_format: '%Y-%m-%d'
@@ -42,7 +42,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 ## 'pygments' is unsupported on GitHub Pages now.
 highlighter: rouge
 highlight:
-  line_number: true
+line_number: true
 
 #### Markdown Processors
 ## 'redcarpet' is unsupported on GitHub Pages now.
@@ -282,7 +282,7 @@ sidebar:
 
 
 # Blog rolls
-#links_title: 感谢硕哥技术支持   #友情链接
+#links_title:    #友情链接
 #links_layout: block
 #links_layout: inline
 #links:http://tongxiaoshuo.club/
@@ -318,7 +318,7 @@ post_meta:
 # Post wordcount display settings
 post_wordcount:
   item_text: false      # 是否显示文字
-  wordcount: true      # 显示字数
+  wordcount: flase      # 显示字数
   min2read: false      # 显示阅读时间
   separated_meta: true # 是否分开
 
@@ -391,7 +391,7 @@ wildfire:
   enable: false
   # version - It's recommended to use the following versions.
   loaderVersion: 1.2.5 # https://www.npmjs.com/package/wildfire-comment
-  useDev: true
+  useDev: false
   version: 0.5.6 
   # database config
   databaseProvider: firebase # or wilddog
@@ -515,7 +515,7 @@ vkontakte_api:
 # Star rating support to each article. 对每篇文章的星级支持
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: false
+  enable: true
   id:     #<app_id>
   color:  fc6423
 
@@ -562,7 +562,7 @@ baidu_push: true
 # API Documentation:
 # https://developers.google.com/google-apps/calendar/v3/reference/events/list
 calendar:
-  enable: true
+  enable: false
   calendar_id: ts969383078@gmail.com
   api_key: AIzaSyAFfC9LM4pVuYrOvVk0NM-gZVQ2N2tJwQU
   orderBy: startTime
