@@ -4,21 +4,22 @@
 # ---------------------------------------------------------------
 
 # Site
-title: 欢迎来到我的小世界
-subtitle: 你好，我叫陈玮泽，一位来自中国的算法工程师           #网站子标题
-description: 计算机视觉、机器学习、深度学习
-author: weize
+title: 欢迎来到我的小世界				        #网站标题
+#subtitle: 你好，我叫陈玮泽，一位来自中国的算法工程师            #网站子标题
+description: 计算机视觉、机器学习、深度学习			#网站描述
+author: 玮泽							#作者
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: zh-Hans
+language: zh-Hans						#语言选项
 date_format: '%Y-%m-%d'
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
+# If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
+# 如果站点放在子目录中，将url设置为“http://yoursite.com”，将baseurl设置为“/child”
 url:
 baseurl:
 permalink: pretty
 
-# Pagination
+# Pagination				#对目录、标签等的分页设置
 paginate: 10
 #paginate_path: "/page:num/"
 #archive:
@@ -37,7 +38,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 # Separator
 #excerpt_separator: <!-- more -->
 
-# Code Highlighter
+# Code Highlighter			#代码高亮
 ## 'pygments' is unsupported on GitHub Pages now.
 highlighter: rouge
 highlight:
@@ -116,18 +117,18 @@ index_with_subtitle: true
 # Menu Settings 菜单设置
 # ---------------------------------------------------------------
 
-# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
-menu:
-  home: /
-  categories: /categories/
-  #about: /about/
-  #archives: /archives/    归档页及其图标
-  tags: /tags/
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
+# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)（菜单栏选项见下，不需要哪个类别前面加#注释掉即可）
+menu:	
+  home: /				#首页
+  categories: /categories/		#分类
+  about: /about/			#关于
+  archives: /archives/    归档页及其图标#
+  #tags: /tags/				#标签
+  sitemap: /sitemap.xml
+  commonweal: /404.html
 
 
-# Enable/Disable menu icons.
+# Enable/Disable menu icons.菜单栏图标
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
@@ -148,7 +149,7 @@ menu_icons:
 
 
 # ---------------------------------------------------------------
-# Scheme Settings 主题修改
+# Scheme Settings 主题设置
 # ---------------------------------------------------------------
 
 # Schemes
@@ -215,11 +216,11 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  GitHub: https://github.com/popweize || github
+  GitHub: https://github.com/popweize
   LinkLabel: Link
 
 
-# Social Links Icons
+# Social Links Icons	社交链接图标
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of the item and value is the name of FontAwesome icon. Key is case-senstive.
@@ -258,7 +259,7 @@ creative_commons: by-nc-sa
 
 
 sidebar:
-  # 侧边栏位置: left | right (只有Pisces、Gemini有效).
+  # 侧边栏位置: left | right (只有Pisces、Gemini主题有效).
   position: left
   #position: right
 
@@ -285,7 +286,7 @@ sidebar:
 #links_layout: block
 #links_layout: inline
 #links:
-  #Title: http://example.com/
+  #Title: http://tongxiaoshuo.club/
 
 
 # ---------------------------------------------------------------
@@ -304,7 +305,7 @@ excerpt_description: true
 # 自动摘要 Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt: 
-  enable: true
+  enable: false
   length: 150
 
 # Post meta display settings # 摘要元数据
@@ -323,7 +324,7 @@ post_wordcount:
 
 # Wechat Subscriber
 #wechat_subscriber:    # 微信公众号订阅
-  #enabled: true       # 二维码图片链接
+  #enabled: false       # 二维码图片链接
   #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
   #description: ex. subscribe to my blog by scanning my public wechat account         # 描述性文字，会放在二维码上方
 
@@ -339,12 +340,12 @@ post_copyright:             # 文档许可声明
 # Misc Theme Settings主题专用设置
 # ---------------------------------------------------------------
 
-# Custom Logo.定制Logo，只对默认Muse有效。
+
 # !!Only available for Default Scheme currently.
 # Options:
 #   enabled: [true/false] - Replace with specific image
 #   image: url-of-image   - Images's url
-custom_logo:
+custom_logo:				# Custom Logo.定制Logo，只对默认Muse有效。
   enabled: false
   image:
 
@@ -362,12 +363,12 @@ highlight_theme: normal
 
 # MathJax Support MathJax数学公式设置
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
-han: false
+han: true
 
 # Swiftype Search API Key
 #swiftype_key:
@@ -389,7 +390,7 @@ disqus:
 
 # <wildfire>    评论系统
 wildfire:
-  enable: true
+  enable: false
   # version - It's recommended to use the following versions.
   loaderVersion: 1.2.5 # https://www.npmjs.com/package/wildfire-comment
   useDev: true
@@ -435,7 +436,7 @@ livere_uid: MTAyMC80OTYyNy8yNjExOA==
  
 # Support for gitalk comments system.                评论系统
 gitalk:
-  enable: true
+  enable: false
   clientID: 3a88fd27bb6cd291a442
   clientSecret: 6f98fd9edbab58184e44e123c02b166af19795fe    #生成的clientSecret
   repo: popweize.github.io    #仓库名称
@@ -563,7 +564,7 @@ baidu_push: true
 # API Documentation:
 # https://developers.google.com/google-apps/calendar/v3/reference/events/list
 calendar:
-  enable: false
+  enable: true
   calendar_id: ts969383078@gmail.com
   api_key: AIzaSyAFfC9LM4pVuYrOvVk0NM-gZVQ2N2tJwQU
   orderBy: startTime
@@ -600,9 +601,9 @@ local_search:
 exturl: false                # 是否对外链进行加密解密
 
 #打赏
-reward_comment: 楞着干嘛，快打钱
-wechatpay: /images/wechat.png
-alipay: /images/alipay.jpg
+reward_comment: 个人微信在打赏里面，你懂我意思吧～～
+wechatpay: /images/alipay.jpg
+alipay: /images/wechat.png
 
 
 
