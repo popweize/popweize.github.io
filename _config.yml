@@ -242,7 +242,7 @@ avatar:  /images/my_photo.jpg
 #在侧边栏中是否显示文章标题目录。
 # Table Of Contents in the Sidebar
 toc:
-  enable: false
+  enable: true
 
   # Automatically add list number to toc.是否自动编号
   number: true
@@ -259,7 +259,7 @@ creative_commons: by-nc-sa
 
 
 sidebar:
-  # 侧边栏位置: left | right (只有Pisces、Gemini主题有效).
+  # Pisces、Gemini侧边栏位置: left | right (只有Pisces、Gemini主题有效).
   position: left
   #position: right
 
@@ -282,11 +282,11 @@ sidebar:
 
 
 # Blog rolls
-#links_title: Links   #友情链接
-#links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://tongxiaoshuo.club/
+links_title: 感谢硕哥技术支持   #友情链接
+links_layout: block
+links_layout: inline
+links:http://tongxiaoshuo.club/
+  Title: http://tongxiaoshuo.club/
 
 
 # ---------------------------------------------------------------
@@ -383,7 +383,7 @@ baidu_analytics: 985006a2242832bb377a72cd34716983
 disqus:
   enable: false
   shortname:
-  count: true
+  count: false
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
   hide: false
