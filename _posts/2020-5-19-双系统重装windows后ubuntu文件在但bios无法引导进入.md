@@ -1,8 +1,8 @@
 ---
-title:双系统重装windows后bios无法引导进入ubuntu系统
-description:win10_ubuntu双系统重装windows系统后，ubuntu系统文件都还在，但是系统引导没了，bios无法再选择进入ubuntu系统，可以选择重装ubuntu不过比较麻烦，就需要重新建立ubuntu引导。             
+title: 双系统重装windows后bios无法引导进入ubuntu系统
+description: win10_ubuntu双系统重装windows系统后，ubuntu系统文件都还在，但是系统引导没了，bios无法再选择进入ubuntu系统，可以选择重装ubuntu不过比较麻烦，就需要重新建立ubuntu引导。             
 categories:
- - linux ubuntu
+ - ubuntu
 tags: 科技宅拯救世界
 ---
 

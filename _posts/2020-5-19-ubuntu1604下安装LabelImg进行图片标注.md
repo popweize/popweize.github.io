@@ -2,7 +2,7 @@
 title: ubuntu1604下安装LabelImg进行图片标注
 description: 训练模型，就得有数据，还得标注出来
 categories:
- - ubuntu 计算机视觉 深度学习
+ - 深度学习
 tags: 科技宅拯救世界
 ---
 

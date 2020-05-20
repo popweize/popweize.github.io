@@ -1,8 +1,8 @@
 ---
 title: ubuntu_win10双系统时间错误 
-description:  从外部应用（如WPS Presentation）打开连接后，chrome只显示一个空的标签，不会自动跳转           
+description: 从外部应用（如WPS Presentation）打开连接后，chrome只显示一个空的标签，不会自动跳转           
 categories:
- - linux ubuntu
+ - ubuntu
 tags: 科技宅拯救世界
 ---
 
