@@ -2,6 +2,7 @@
 title: Ubuntu_win10双系统无法进入Windows磁盘的解决方法
 description: 双系统需要进行文件交换，但是有时会出现磁盘无法访问的额情况           
 categories:
+ - linux
  - ubuntu
 tags: 科技宅拯救世界
 ---

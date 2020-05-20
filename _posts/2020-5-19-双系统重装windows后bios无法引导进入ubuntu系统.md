@@ -2,6 +2,7 @@
 title: 双系统重装windows后bios无法引导进入ubuntu 
 description: 编译代码总会出现各种问题，这次是gcc版本             
 categories:
+ - linux
  - ubuntu
 tags: 科技宅拯救世界
 ---

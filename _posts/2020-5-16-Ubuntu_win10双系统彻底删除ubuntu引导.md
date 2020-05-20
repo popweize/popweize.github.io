@@ -2,6 +2,7 @@
 title: Ubuntu_win10双系统彻底删除ubuntu引导
 description: 第一次装系统往往会出很多问题，需要装很多次，那么上一次安装时产生的引导文件怎么删除让电脑变干净呢         
 categories:
+ - linux
  - ubuntu
 tags: 科技宅拯救世界
 ---
