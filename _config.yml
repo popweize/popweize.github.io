@@ -312,13 +312,13 @@ auto_excerpt:
 post_meta:
   item_text: true    # 是否显示“发表于”这几个文字
   created_at: true   # 文章创建日期
-  updated_at: true  # 文章修改日期
+  updated_at: false  # 文章修改日期
   categories: true   # 文章所属分类
 
 # Post wordcount display settings
 post_wordcount:
   item_text: false      # 是否显示文字
-  wordcount: false      # 显示字数
+  wordcount: true      # 显示字数
   min2read: false      # 显示阅读时间
   separated_meta: false # 是否分开
 
